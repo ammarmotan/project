@@ -1,9 +1,10 @@
+/* navbar */
 .navbar-toggler {
     color: #000;
 }
 
 .navbar {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .navbar-brand img {
@@ -59,7 +60,258 @@
     color: #fff;
     opacity: 0.7;
 }
-.alert{
+/* navbar */
+
+/* banner */
+.banner{
+    margin-top: 2%;
+    height: 400px;
+    background:  linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)), url('/images/about_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner .content{
+    color: #fff;
+    text-align: center;
+    padding-top: 140px;
+}
+.banner .content h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+.banner .content p{
+    font-size: 18px;
+    font-style: italic;
+
+}
+/* banner */
+
+/* about */
+.about h2{
+    padding-top: 2%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+    font-family: "Bad Script", cursive;
+  }
+  .about h2 span{
+    color: #CC0000;
+  }
+  .about h3{
+    padding-bottom: 0;
+    text-align: center;
+    color: rgb(154, 154, 154);
+    font-size: 15px;
+  }
+  .about1{
+    border: none;
+    box-shadow: none;
+    margin: auto;
+  }
+  .about1 .aimg img{
+    padding: 10px;
+    height: 100%;
+  }
+  .about1 h2{
+    color: #CC0000;
+    text-align: start;
+    font-size: 40px;
+  }
+  .about1 i{
+    color: #CC0000;
+  }
+  .about1 .ap{
+    font-size: 15px;
+  }
+  .about1 .acon{
+    padding-left: 30px;
+  }
+/* about */
+
+/* chef */
+.cheif h2{
+    padding-top: 1%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+    font-family: "Bad Script", cursive;
+  }
+  .cheif h2::before,
+  .cheif h2::after{
+    content: "";
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(
+  45deg,
+  #CC0000,
+  #CC0000 84%
+  );
+  background-blend-mode: normal;
+  display: inline-block;
+  }
+  .cheif h2:before {
+  margin: 0 15px 10px 0;
+  }
+  
+  .cheif h2:after {
+  margin: 0 0 10px 15px;
+  }
+  a{
+  text-decoration: none;
+  }
+  .cheif h3{
+    padding-bottom: 0;
+    text-align: center;
+    color: rgb(154, 154, 154);
+    font-size: 15px;
+  }
+  .chef{
+    background-color: lightgrey;
+    margin-top: 1%;
+  }
+  .chef-bar{
+    background-color: lightgrey;
+  }
+/* chef */
+
+/* dinning */
+.dining h2{
+  padding-top: 2%;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 100;
+  font-family: "Bad Script", cursive;
+}
+.dining h2::before,
+.dining h2::after{
+  content: "";
+width: 50px;
+height: 2px;
+background: linear-gradient(
+45deg,
+#CC0000,
+#CC0000 84%
+);
+background-blend-mode: normal;
+display: inline-block;
+}
+.dining h2:before {
+margin: 0 15px 10px 0;
+}
+
+.dining h2:after {
+margin: 0 0 10px 15px;
+}
+a{
+text-decoration: none;
+}
+.gallery{
+display: flex;
+justify-content: center;
+margin-top: 2%;
+}
+.gallery img:hover{
+box-shadow: 2px 2px 4px lightgrey;
+cursor: pointer;
+scale: 1.1;
+transition: 0.1s;
+}
+/* dinning */
+
+/* testimonial */
+.test{
+  margin-top: 2%;
+  /* height: 500px; */
+  /* background-color: rgb(232, 232, 232); */
+  background: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url('/images/about_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.test h2{
+  color: #fff;
+  padding-top: 2%;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 100;
+  font-family: "Bad Script", cursive;
+}
+.test h2 span{
+  color: #CC0000;
+}
+.test h3{
+  padding-bottom: 0;
+  text-align: center;
+  color: rgb(154, 154, 154);
+  font-size: 15px;
+}
+.carousel-inner{
+  background-color: transparent;
+  /* background-color: rgb(232, 232, 232); */
+}
+.test1{
+  color: #fff;
+  box-shadow: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 2px solid #CC0000;
+  background-color: transparent;
+  /* background-color: rgb(232, 232, 232); */
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.test1 .timg{
+  margin: auto;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+border-radius: 50%;
+}
+.test1 .tqp{
+  font-size: 16px;
+}
+.test1 .tname{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+/* testimonial */
+
+/* Top scroll */
+#scrollToTopBtn {
+  display: none; /* Initially hide the button */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #CC0000;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+#scrollToTopBtn i{
+  padding: 2px;
+  align-items: center;
+}
+/* Top scroll */
+
+/* footer */
+.s-icon i:hover{
+  color: #CC0000;
+  transition: 0.5s;
+}
+/* footer */
+
+/* .alert{
     text-align: center;
     margin: auto;
     margin-top: 10%;
@@ -67,4 +319,4 @@
 .alert i{
     font-size: 50px;
     color: #CC0000;
-}
+} */

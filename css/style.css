@@ -468,9 +468,14 @@ height: 150px;
 .test{
   margin-top: 2%;
   /* height: 500px; */
-  background-color: rgb(232, 232, 232);
+  /* background-color: rgb(232, 232, 232); */
+  background: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url('/images/about_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .test h2{
+  color: #fff;
   padding-top: 2%;
   font-size: 30px;
   text-align: center;
@@ -487,15 +492,18 @@ height: 150px;
   font-size: 15px;
 }
 .carousel-inner{
-  background-color: rgb(232, 232, 232);
+  background-color: transparent;
+  /* background-color: rgb(232, 232, 232); */
 }
 .test1{
+  color: #fff;
   box-shadow: none;
   border-top: none;
   border-right: none;
   border-bottom: none;
   border-left: 2px solid #CC0000;
-  background-color: rgb(232, 232, 232);
+  background-color: transparent;
+  /* background-color: rgb(232, 232, 232); */
   margin: auto;
   margin-top: 3%;
   margin-bottom: 3%;
@@ -511,7 +519,7 @@ border-radius: 50%;
   font-size: 16px;
 }
 .test1 .tname{
-  color: #000;
+  color: #fff;
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -617,8 +625,10 @@ border-radius: 50%;
   font-size: 15px;
 }
 .table1{
+  border-radius: 10px;
+  border: 1px solid rgb(230, 230, 230);
   margin: auto;
-  box-shadow: none;
+  box-shadow: 15px 15px 30px rgb(230, 230, 230);
 }
 .table1 .tabimg img{
   padding: 10px;
@@ -630,7 +640,7 @@ border-radius: 50%;
 }
 @media (max-width: 800px) {
   #myform input{
-    width: 250px;
+    width: 200px;
     display: flex;
     align-items: flex-start;
     margin-top: 5px;
@@ -642,18 +652,44 @@ border-radius: 50%;
   }
 }
 #myform input{
+  text-align: center;
+  -webkit-box-shadow: inset 10px 10px 5px 0px rgba(219,219,219,1);
+  -moz-box-shadow: inset 10px 10px 5px 0px rgba(219,219,219,1);
+  box-shadow: inset 10px 10px 5px 0px rgba(219,219,219,1);
   height: 40px;
   border-radius: 5px;
   margin-top: 10px;
   border: 1px solid lightgray;
-  box-shadow: none;
   outline: none;
 }
+#myform input::placeholder{
+  padding-left: 8px;
+}
 #myform textarea{
+  padding-left: 10px;
+  padding-top: 7px;
+  -webkit-box-shadow: inset 10px 10px 5px 0px rgba(219,219,219,1);
+  -moz-box-shadow: inset 10px 10px 5px 0px rgba(219,219,219,1);
+  box-shadow: inset 10px 10px 5px 0px rgba(219,219,219,1);
   outline: none;
   border: 1px solid lightgray;
   margin-top: 10px;
   width: 100%;
   height: 90px;
 }
+#myform textarea::placeholder{
+  padding-left: 8px;
+  padding-top: 5px;
+}
 /* table */
+
+/* footer */
+.footer{
+  background-color: #1f1f1f;
+  color: #fff;
+}
+.s-icon i:hover{
+  color: #CC0000;
+  transition: 0.5s;
+}
+/* footer */
