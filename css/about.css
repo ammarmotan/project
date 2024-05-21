@@ -66,7 +66,7 @@
 .banner{
     margin-top: 2%;
     height: 400px;
-    background:  linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)), url('/images/about_background.jpg');
+    background:  linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)), url('/images/about1_background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -226,7 +226,7 @@ transition: 0.1s;
   margin-top: 2%;
   /* height: 500px; */
   /* background-color: rgb(232, 232, 232); */
-  background: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url('/images/about_background.jpg');
+  background: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url('/images/about1_background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
