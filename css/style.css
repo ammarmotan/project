@@ -469,7 +469,7 @@ height: 150px;
   margin-top: 2%;
   /* height: 500px; */
   /* background-color: rgb(232, 232, 232); */
-  background: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url('https://ammarmotan.github.io/images/about1_background.jpg');
+  background: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url('/images/about1-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
