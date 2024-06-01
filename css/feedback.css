@@ -1,48 +1,57 @@
+/* navbar */
 .navbar-toggler {
     color: #000;
-}
-
-.navbar {
+  }
+  
+  .navbar {
+    box-shadow: none;
     background-color: #fff;
-}
-
-.navbar-brand img {
+  }
+  
+  .navbar-brand img {
+    margin-left: 70px;
     height: 60px;
-}
-
-.navbar-nav {
+  }
+  @media (max-width:800px) {
+  .navbar-brand img{
+    margin-left: 0;
+  }  
+  }
+  
+  .navbar-nav {
     display: flex;
     justify-content: center;
     width: 100%;
-}
-
-.nav-link {
+  }
+  
+  .nav-link {
     font-weight: 550;
     color: #000;
     font-size: 19px;
     margin-left: 10px;
     font-family: 'Roboto', sans-serif;
-}
-
-.nav-link:hover {
+  }
+  
+  .nav-link:hover {
     color: #000;
-}
-
-.nav-item::after {
+  }
+  
+  .nav-item::after {
     content: "";
     width: 0;
     height: 2px;
     background-color: #CC0000;
     margin: auto;
     display: block;
-}
-
-.nav-item:hover::after {
+  }
+  
+  .nav-item:hover::after {
     width: 100%;
     transition: width 0.3s linear;
-}
-
-.btn {
+  }
+  
+  .btn {
+    margin-right: 70px;
     text-align: center;
     padding: 2px;
     background-color: #CC0000;
@@ -52,19 +61,159 @@
     width: 130px;
     height: 35px;
     transition: 0.5s;
-}
-
-.btn:hover {
+  }
+  
+  .btn:hover {
     background-color: #CC0000;
     color: #fff;
     opacity: 0.7;
-}
-.alert{
+  }
+  /* navbar */
+
+  /* banner */
+.banner {
+    margin-top: 1%;
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/aboutbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 0;
+  }
+  .banner .content {
+    color: #fff;
     text-align: center;
-    margin: auto;
-    margin-top: 10%;
+    padding-top: 140px;
+  }
+  .banner .content h2 {
+    font-family: "Crimson Text", serif;
+    font-size: 45px;
+    font-weight: 550;
+    letter-spacing: 1px;
+  }
+  .banner .content p {
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+  /* banner */
+
+  /* main */
+  .main {
+    background-color: #d1d1d1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    /* Add perspective to the container */
+  }
+  
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    box-shadow: 10px 10px 20px rgb(209, 209, 209);
+    color: #fff;
+    background-color: #22577a;
+    padding: 20px;
+    /* border-radius: 10px; */
+    box-sizing: border-box;
+    transition: transform 0.5s, box-shadow 0.5s;
+    width: 300px;
+    height: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    transform-style: preserve-3d;
+    /* Enable 3D transforms */
+  }
+  
+  .box1:hover,
+  .box2:hover,
+  .box3:hover,
+  .box4:hover {
+    cursor: pointer;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2);
+    /* Enhance shadow on hover for depth */
+  }
+  
+  @media (max-width: 800px) {
+    .main {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+      width: calc(100% - 40px);
+      margin-bottom: 20px;
+      margin-top: 0;
+      height: auto;
+    }
+  }
+  /* main */
+
+/* feedback */
+.feedback input{
+    outline: none;
+    background-color: rgb(237, 237, 237);
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+    width: 100%;
+    height: 40px;
 }
-.alert i{
-    font-size: 50px;
-    color: #CC0000;
+.feedback input:focus{
+    border-bottom: 1px solid #CC0000;
 }
+.feedback textarea{
+    outline: none;
+    background-color: rgb(237, 237, 237);
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+    width: 100%;
+    height: 130px;
+}
+.book{
+  font-weight: 500;
+  background-color: #CC0000;
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  border: none;
+}
+.book:hover{
+  background-color: #fff;
+  color: #cc0000;
+  border: 1px solid #CC0000;
+}
+/* feedback */
+
+/* scroll */
+#scrollToTopBtn {
+    display: none; /* Initially hide the button */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #CC0000;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  #scrollToTopBtn i{
+    padding: 2px;
+    align-items: center;
+  }
+  /* scroll */

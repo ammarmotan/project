@@ -1,434 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      <!-- menu link -->
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!------ Include the above in your HEAD tag ---------->
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-  <!-- menu link -->
-
+  <!-- Demo styles -->
   <style>
-    .break{
-  background-color: #e4e4e4;
-  display: flex;
-  justify-content: space-evenly;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-   .slider {
-    text-align: center;
-    margin-top: 50px;
-}
+   
 
-.slides-container {
-    display: flex;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.slide {
-    flex: 0 0 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.controls {
-    margin-top: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-}
-
-@media (min-width: 600px) {
-    .slide {
-        flex: 0 0 33.33%;
+    .swiper {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -150px;
+      margin-top: -150px;
     }
-}
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
   </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="menu-card mt-2 mb-4">
-          <ul>
-            <li class="btn  active" data-filter="*">All</li>
-            <li class="btn" data-filter=".gts">Girls T-shirt</li>
-            <li class="btn" data-filter=".lap">Laptops</li>
-            <li class="btn" data-filter=".selfie">selfie</li>
-          </ul>
-        </div>
-        <div class="menu-item">
-          <div class="item selfie">
-    
-            </a>
-          </div>
-          <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg" class="fancylight popup-btn"
-              data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg" alt="">
-            </a>
-          </div>
-          <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/blonde-tourist-taking-selfie_23-2147978899.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/blonde-tourist-taking-selfie_23-2147978899.jpg" alt="">
-            </a>
-          </div>
-          <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/cute-girls-oin-studio_1157-18211.jpg" class="fancylight popup-btn"
-              data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/cute-girls-oin-studio_1157-18211.jpg" alt="">
-            </a>
-          </div>
-          <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/stylish-pin-up-girls_1157-18451.jpg" class="fancylight popup-btn"
-              data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-pin-up-girls_1157-18451.jpg" alt="">
-            </a>
-          </div>
-          <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/stylish-pin-up-girl_1157-18940.jpg" class="fancylight popup-btn"
-              data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/stylish-pin-up-girl_1157-18940.jpg" alt="">
-            </a>
-          </div>
-          <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/digital-laptop-working-global-business-concept_53876-23438.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/digital-laptop-working-global-business-concept_53876-23438.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-psd/set-digital-devices-screen-mockup_53876-76507.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-psd/set-digital-devices-screen-mockup_53876-76507.jpg" alt="">
-            </a>
-          </div>
-          <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/young-brunette-woman-with-sunglasses-urban-background_1139-893.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/young-brunette-woman-with-sunglasses-urban-background_1139-893.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-psd/laptop-digital-device-screen-mockup_53876-76509.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-psd/laptop-digital-device-screen-mockup_53876-76509.jpg" alt="">
-            </a>
-          </div>
-          <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/young-woman-holding-pen-hand-thinking-while-writing-notebook_23-2148029424.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/young-woman-holding-pen-hand-thinking-while-writing-notebook_23-2148029424.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-psd/female-fashion-concept_23-2147643598.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-psd/female-fashion-concept_23-2147643598.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/girl-city_1157-16454.jpg" class="fancylight popup-btn"
-              data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/girl-city_1157-16454.jpg" alt="">
-            </a>
-          </div>
-          <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/elegant-lady-with-laptop_1157-16643.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/elegant-lady-with-laptop_1157-16643.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-psd/laptop-mock-up-lateral-view_1310-199.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-psd/laptop-mock-up-lateral-view_1310-199.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/portrait-young-woman_1303-10071.jpg" class="fancylight popup-btn"
-              data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/portrait-young-woman_1303-10071.jpg" alt="">
-            </a>
-          </div>
-          <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/beautiful-girl-near-wall_1157-16401.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/beautiful-girl-near-wall_1157-16401.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/woman-taking-photograph-her-boyfriend-enjoying-piggyback-ride-his-back_23-2147841613.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/woman-taking-photograph-her-boyfriend-enjoying-piggyback-ride-his-back_23-2147841613.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/laptop-wooden-table_53876-20635.jpg" class="fancylight popup-btn"
-              data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/laptop-wooden-table_53876-20635.jpg" alt="">
-            </a>
-          </div>
-          <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/business-woman-working-laptop_1388-67.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/business-woman-working-laptop_1388-67.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-psd/group-people-holding-laptop-mockup-charity_23-2148069565.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-psd/group-people-holding-laptop-mockup-charity_23-2148069565.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/portrait-young-cheerful-woman-headphones-sitting-stairs_1262-17488.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/portrait-young-cheerful-woman-headphones-sitting-stairs_1262-17488.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/celebration-concept-close-up-portrait-happy-young-beautiful-african-woman-black-t-shirt-smiling-with-colorful-party-balloon-yellow-pastel-studio-background_1258-934.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/celebration-concept-close-up-portrait-happy-young-beautiful-african-woman-black-t-shirt-smiling-with-colorful-party-balloon-yellow-pastel-studio-background_1258-934.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/pretty-woman-showing-arm-muscles_23-2148056021.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/pretty-woman-showing-arm-muscles_23-2148056021.jpg" alt="">
-            </a>
-          </div>
-          <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/happy-woman-having-video-call-using-laptop-office_23-2148056211.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/happy-woman-having-video-call-using-laptop-office_23-2148056211.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-psd/laptop-mockup-table-with-plants_23-2147955548.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-psd/laptop-mockup-table-with-plants_23-2147955548.jpg" alt="">
-            </a>
-          </div>
-          <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item selfie col-lg-3 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg"
-                alt="">
-            </a>
-          </div>
-          <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-            <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
-              class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid"
-                src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
-                alt="">
-            </a>
-          </div>
-        </div>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
       </div>
-
-      <div class="slider">
-        <div class="slides-container">
-            <div class="slide" id="breakfastSlide">
-                <h2>Breakfast Menu</h2>
-                <div class="break">
-                  <div class="b1">
-                    <img src="dish1.png" alt="">
-                    <h2>omlet</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <p>$5.99</p>
-                  </div>
-                  <div class="b2">
-                    <img src="dish1.png" alt="">
-                    <h2>omlet</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <p>$5.99</p>
-                  </div>
-                  <div class="b3">
-                    <img src="dish1.png" alt="">
-                    <h2>omlet</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                    <p>$5.99</p>
-                  </div>
-                  </div>
-            </div>
-            <div class="slide" id="lunchSlide">
-                <h2>Lunch Menu</h2>
-                <p>Insert lunch menu items here...</p>
-            </div>
-            <div class="slide" id="dinnerSlide">
-                <h2>Dinner Menu</h2>
-                <p>Insert dinner menu items here...</p>
-            </div>
-        </div>
-        <div class="controls">
-            <button onclick="showSlide('breakfastSlide')">Breakfast</button>
-            <button onclick="showSlide('lunchSlide')">Lunch</button>
-            <button onclick="showSlide('dinnerSlide')">Dinner</button>
-        </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+      </div>
     </div>
+    <div class="swiper-pagination"></div>
+  </div>
 
-    <script>
-      function showSlide(slideId) {
-    const slide = document.getElementById(slideId);
-    const slidesContainer = document.querySelector('.slides-container');
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    // Calculate the offset to slide the selected slide into view
-    const slideIndex = Array.from(slidesContainer.children).indexOf(slide);
-    const slideWidth = slide.clientWidth;
-    const offset = -slideIndex * slideWidth;
-
-    // Apply the transform to slide the content
-    slidesContainer.style.transform = `translateX(${offset}px)`;
-}
-    </script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cube",
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 </body>
+
 </html>

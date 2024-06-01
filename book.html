@@ -8,7 +8,15 @@
     <link rel="icon" type="image" href="images/delicious.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/teams/team-1/assets/css/team-1.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- fonts -->
     <link rel="stylesheet" href="css/book.css">
 </head>
 
@@ -33,7 +41,7 @@
                         <a class="nav-link" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="event.html">Event</a>
+                        <a class="nav-link" href="chef.html">Chefs</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -48,19 +56,324 @@
                 </ul>
                 <a href="book.html"><button class="btn">Book a Table</button></a>
             </div>
+          </div>
+        </nav><br><br><br>
+        
+        <div class="banner">
+          <div class="content">
+              <h2>Book Your Table</h2>
+              <p><a href="index.html" style="text-decoration: none; color: #fff;">Home</a> -> Book A Table</p>
+          </div>
+      </div><br><br><br>
+        
+        <!-- table -->
+    <div class="card mb-3 table1" style="max-width: 1150px; padding: 20px;">
+      <div class="row g-0">
+        <div class="col-md-4 tabimg">
+          <img src="images/in4.jpg" class="img-fluid rounded-start" alt="...">
         </div>
-    </nav><br><br><br>
+        <div class="col-md-8">
+          <div class="card-body table-content">
+            <h5 class="card-title" style="font-size: 40px;letter-spacing: 1px; font-family: 'Roboto Condensed', sans-serif;">Book a Table</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet voluptate quis ducimus quod ab rerum.</p>
+            <form id="myform">
+              <input type="text" placeholder="Full Name..." required><br>
+              <input type="email" placeholder="Email" required><br>
+              <input type="number" placeholder="Phone Number" required><br>
+              <input type="date" placeholder="Date" required><br>
+              <input type="time" value="12:00" required><br>
+              <input type="number" placeholder="Guest" required><br>
+              <center>
+              <button class="book" type="submit" style="margin-top: 2%;" >Book Now</button>
+              </center>
+            </form>
+          </div>
+          </div>     
+    </div><br>
+    </div><br><br><br>
+    <!-- table -->
 
-    <div class="alert">
-        <i class="fa-solid fa-circle-exclamation"></i>
-        <h1>This Page is on Construction</h1><br>
-        <h2>Try Again After 2 days.</h2><br>
-        <h3>Thankyou!</h3>
+    <!-- menu -->
+    <div class="menu">
+      <h2>Our Menu</h2>
+    </div><br>
+    <center>
+    <nav  class="pmenu">
+      <ul class="pagination">
+        <!-- <li class="page-item" id="previous">
+        <a class="page-link" href="#">Previous</a>
+      </li> -->
+      <li   id="page-1"><a class="page-link" href="#content-1" style="background-color: #22577a; color: #fff; border: none;">Breakfast</a></li>
+      <li  id="page-2" aria-current="page">
+        <a class="page-link" href="#content-2">Lunch</a>
+      </li>
+      <li  id="page-3"><a class="page-link" href="#content-3">Dinner</a></li>
+    </ul>
+  </nav><br>
+</center>
+  <div class="menu-items1" id="content-1">
+    <h2 style="text-align: center;font-family:Bad Script, cursive; margin-bottom: 2%;">Breakfast</h2><br>
+    <div class="breakfast">
+      <div class="b1">
+        <img src="images/breakfast1.webp" alt=""><br><br>
+        <center>
+          <h2 style="padding-top: 1%;">omlet</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="mp">$5.99</p>
+        </center>
+        <div class="of"><p>50%</p></div>
+      </div>
+      <div class="b2">
+        <img src="images/breakfast2.jpg" alt=""><br><br>
+        <center>
+          <h2 style="padding-top: 1%;">omlet</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="mp">$5.99</p>
+        </center>
+        <div class="of"><p>50%</p></div>
+      </div>
+      <div class="b3">
+        <img src="images/breakfast3.jpg" alt=""><br><br>
+        <center>
+          <h2 style="padding-top: 1%;">omlet</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="mp">$5.99</p>
+        </center>
+        <div class="of"><p>50%</p></div>
+      </div>
     </div>
+</div>
+  <div class="menu-items2" id="content-2">
+  <h2 style="text-align: center;font-family:Bad Script, cursive; margin-bottom: 2%;">Lunch</h2>
+  <div class="lunch">
+      <div class="l1">
+        <img src="images/lunch1.webp" alt=""><br><br>
+        <center>
+          <h2 style="padding-top: 1%;">omlet</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="mp">$5.99</p>
+        </center>
+        <div class="of"><p>50%</p></div>
+      </div>
+      <div class="l2">
+        <img src="images/lunch2.jpg" alt=""><br><br>
+        <center>
+          <h2 style="padding-top: 1%;">omlet</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="mp">$5.99</p>
+        </center>
+        <div class="of"><p>50%</p></div>
+      </div>
+      <div class="l3">
+        <img src="images/lunch3.jpg" alt=""><br><br>
+        <center>
+          <h2 style="padding-top: 1%;">omlet</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="mp">$5.99</p>
+        </center>
+        <div class="of"><p>50%</p></div>
+      </div>
+    </div>
+</div>
+  <div class="menu-items3" id="content-3">
+    <h2 style="text-align: center;font-family:Bad Script, cursive; margin-bottom: 2%;">Dinner</h2>
+    <div class="dinner">
+      <div class="d1">
+        <img src="images/dinner1.jpg" alt=""><br><br>
+        <center>
+          <h2 style="padding-top: 1%;">omlet</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="mp">$5.99</p>
+        </center>
+        <div class="of"><p>50%</p></div>
+      </div>
+      <div class="d2">
+        <img src="images/dinner2.jpg" alt=""><br><br>
+        <center>
+          <h2 style="padding-top: 1%;">omlet</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="mp">$5.99</p>
+        </center>
+        <div class="of"><p>50%</p></div>
+      </div>
+      <div class="d3">
+        <img src="images/dinner3.webp" alt=""><br><br>
+        <center>
+          <h2 style="padding-top: 1%;">omlet</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="mp">$5.99</p>
+        </center>
+        <div class="of"><p>50%</p></div>
+    </div>
+  </div>
+</div><br><br><br><br>
+    <!-- menu -->
 
+       <!-- Footer -->
+       <footer class="text-center text-lg-start bg-body-tertiary" style="background-color: #1f1f1f; color: #fff;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+          
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset" style="text-decoration: none;">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset" style="text-decoration: none;">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset" style="text-decoration: none;">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset" style="text-decoration: none;">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset" style="text-decoration: none;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset" style="text-decoration: none;">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-3">
+            <h6 class="text-uppercase fw-bold mb-4 text-center">
+              <img src="images/delicious.png" alt="" style="height: 65px; margin-bottom: 3px;">
+            </h6>
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="">
+                <!-- Content -->
+                <h6 class="">
+                  <!-- <img src="images/delicious.png" alt="" style="height: 60px;"> -->
+                </h6>
+                <p>
+                  <!-- Here you can use rows and columns to organize your footer content. Lorem ipsum
+                    dolor sit amet, consectetur adipisicing elit. -->
+                  </p>
+                </div>
+                <!-- Grid column -->
+                
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 f-nav">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4" style="font-size: 20px; letter-spacing: 1px; ">
+                  Company
+                </h6>
+                <p>
+                  <i class="fa-solid fa-arrow-right"></i><a href="index.html" class="text-reset" style="padding-left: 10px; text-decoration: none;">Home</a>
+                </p>
+                <p>
+                  <i class="fa-solid fa-arrow-right"></i><a href="about.html" class="text-reset" style="padding-left: 10px; text-decoration: none;">About</a>
+                </p>
+                <p>
+                  <i class="fa-solid fa-arrow-right"></i><a href="menu.html" class="text-reset" style="padding-left: 10px; text-decoration: none;">Menu</a>
+                </p>
+                <p>
+                  <i class="fa-solid fa-arrow-right"></i><a href="chef.html" class="text-reset" style="padding-left: 10px; text-decoration: none;">Chefs</a>
+                </p>
+              </div>
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4" style="font-size: 20px; letter-spacing: 1px;">
+                  Opening Hours
+                </h6>
+                <p style="font-size: 18px; letter-spacing: 1px;">
+                  <b>
+                    Moday-Saturday
+                  </b>
+                </p>
+                <p style="letter-spacing: 1px;">
+                  <b>
+                    9AM-12PM
+                  </b>
+                </p>
+                <p style="font-size: 18px; letter-spacing: 1px;">
+                  <b>
+                    Sunday
+                  </b>
+                </p>
+                <p style="letter-spacing: 1px;">
+                  <b>
+                    9AM-9PM
+                  </b>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@example.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                <p>
+                  <a href="" class="me-4 text-reset s-icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="" class="me-4 text-reset s-icon">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="" class="me-4 text-reset s-icon">
+                    <i class="fab fa-google"></i>
+                  </a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4" style="font-size: 20px; letter-spacing: 1px;">Newletter</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><input type="email" placeholder="Enter Email Address" style="background-color: rgba(255, 255, 255, 0.1) !important;color: #fff; text-align: center; box-shadow: none; outline: none; border: none; height: 50px; width: 200px;"></p>
+                <p><button class="btn">Subscribe</button></p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: #CC0000; color: #fff;">
+          © 2024 Copyright:
+          <a class="text-reset fw-bold" href="#">Delicious.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+
+  <button onclick="scrollToTop()" id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+            </script>
+            <script src="/js/book.js"></script>
 </body>
 
 </html>
